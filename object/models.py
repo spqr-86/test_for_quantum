@@ -39,7 +39,7 @@ class Object(models.Model):
     )
 
     def __str__(self):
-        return f'id: {self.id}, priority: {self.priority}, status: {self.status}'
+        return f'id: {self.id}, priority: {self.priority}, status:{self.status}'
 
     @classmethod
     def create(cls, **kwargs):
